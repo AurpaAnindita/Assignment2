@@ -14,8 +14,8 @@ var scores = {
 };
 app.use(express.static(__dirname + '/public'));
 
-app.get('/', function (req, res) {
-  res.sendFile(__dirname + '/index.html');
+app.get('/home', function (req, res) {
+  res.sendFile(__dirname + '/home.html');
 });
 
 io.on('connection', function (socket) {
